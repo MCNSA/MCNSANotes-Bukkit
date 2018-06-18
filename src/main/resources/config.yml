@@ -1,0 +1,10 @@
+#MCNSA Notes Configuration
+
+#Server name
+server-name: Server
+
+#Database connection information
+database-host: localhost
+database-name: mcnsa_notes
+database-user: MCNSANotes
+database-password: MCNSANotes

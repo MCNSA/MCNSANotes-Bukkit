@@ -1,0 +1,43 @@
+name: MCNSANotes
+version: 2.0
+author: maboughey (maboughey@gmail.com)
+main: uk.co.maboughey.mcnsanotes.McnsaNotes
+commands:
+    note:
+        description: Write a note about a player
+        aliases: n
+        permission: mcnsanotes.mod
+        usage: "/note [player] [note]"
+    notes:
+        description: read notes on a player
+        permission: mcnsanotes.mod
+        usage: "/notes [player] <page>"
+    deletenote:
+        description: Delete a player's note
+        aliases: nd
+        permission: mcnsanotes.mod.delete
+        usage: "/deletenote [id]"
+    stats:
+        description: View player stats
+        permission: mcnsanotes.player
+        usage: "/stats"
+    notesreload:
+        description: Reload config for notes
+        permission: mcnsanotes.mod.reload
+        usage: "/notesreload"
+    recentnotes:
+        description: View all recent notes
+        permission: mcnsanotes.mod
+        usage: "/recentnotes <page>"
+    flag:
+        description: flag a player
+        permission: mcnsanotes.mod
+        usage: "/flag [player] [reason]"
+    deleteflags:
+        description: Delete a player's flag
+        permission: mcnsanotes.mod
+        usage: "/deleteflag [player]"
+    viewflags:
+        description: View all flagged players
+        permission: mcnsanotes.mod
+        usage: "/viewflags <page>"
