@@ -94,7 +94,7 @@ public class DatabaseManager {
             preparedStatement.executeUpdate();
 
             preparedStatement = connect.prepareStatement(
-                    "CREATE TABLE IF NOT EXISTS taggedPlayers (" +
+                    "CREATE TABLE IF NOT EXISTS taggedplayers (" +
                             "id int(6) NOT NULL AUTO_INCREMENT, " +
                             "uuid varchar(50) NOT NULL, " +
                             "noter_uuid varchar(50), " +
