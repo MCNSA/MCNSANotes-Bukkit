@@ -26,13 +26,14 @@ public class DatabaseManager {
             connProperties.put("user", Configuration.DBUser);
             connProperties.put("password", Configuration.DBPassword);
             connProperties.put("maxReconnects","4");
+            connProperties.put("autoReconnect", "true");
 
             connect = DriverManager.getConnection(Configuration.getDatabaseString(), connProperties);
             Log.info("Connection to Database Established");
 
         }
         catch (SQLException e){
-            Log.error("Database Error connecting to databse: "+ e.getMessage());
+            Log.error("Database Error connecting to database: "+ e.getMessage());
             connect = null;
             McnsaNotes.isEnabled = false;
         }
