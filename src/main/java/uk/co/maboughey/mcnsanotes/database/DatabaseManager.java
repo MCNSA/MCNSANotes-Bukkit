@@ -16,6 +16,15 @@ public class DatabaseManager {
     public static Connection getConnection() {
         if (connect == null)
             connect();
+
+        try {
+            if (connect.isClosed()) {
+                connect();
+            }
+        } catch (SQLException e) {
+            connect = null;
+            connect();
+        }
         return connect;
     }
 
