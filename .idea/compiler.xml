@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MCNSANotes-Bukkit" />
+        <module name="mcnsanotes" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MCNSANotes-Bukkit" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
