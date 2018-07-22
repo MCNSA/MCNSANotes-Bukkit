@@ -2,6 +2,7 @@ name: MCNSANotes
 version: 2.0
 author: maboughey (maboughey@gmail.com)
 main: uk.co.maboughey.mcnsanotes.McnsaNotes
+api-version: 1.13
 commands:
     note:
         description: Write a note about a player
