@@ -24,13 +24,14 @@ public class NotesTabComplete implements TabCompleter {
                 }
             }
 
-            /*
-            for (OfflinePlayer oplayer: Bukkit.getOfflinePlayers()) {
-                if (!output.contains(oplayer.getName()) && oplayer.getName().toLowerCase().startsWith(args[0])) {
-                    output.add(oplayer.getName());
+            OfflinePlayer[] oplayers = Bukkit.getOfflinePlayers();
+            if (oplayers != null && oplayers.length > 0) {
+                for (OfflinePlayer player: oplayers) {
+                    if (!output.contains(player.getName()) && player.getName().toLowerCase().startsWith(args[0])) {
+                        output.add(player.getName());
+                    }
                 }
             }
-            */
         }
 
         return output;
