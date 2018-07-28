@@ -13,7 +13,7 @@ public class Configuration {
     FileConfiguration config = null;
 
     public Configuration(FileConfiguration config, McnsaNotes mcnsaNotes) {
-        this.plugin = mcnsaNotes;
+        plugin = mcnsaNotes;
         this.config = config;
     }
 

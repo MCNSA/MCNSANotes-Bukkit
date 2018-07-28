@@ -69,10 +69,7 @@ public class DBtagged {
             PreparedStatement statement = connect.prepareStatement("DELETE FROM taggedplayers WHERE uuid=?");
             statement.setString(1, uuid);
 
-            if (statement.executeUpdate() > 0)
-                return true;
-            else
-                return false;
+            return statement.executeUpdate() > 0;
         }
         catch (SQLException e) {
             Log.error("Database Error when deleting tags: " + e.getLocalizedMessage());

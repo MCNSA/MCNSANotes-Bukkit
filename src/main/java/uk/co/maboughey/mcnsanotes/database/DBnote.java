@@ -85,10 +85,7 @@ public class DBnote {
             PreparedStatement statement = connect.prepareStatement("DELETE FROM notes WHERE id=?");
             statement.setInt(1, id);
 
-            if (statement.executeUpdate() > 0)
-                return true;
-            else
-                return false;
+            return statement.executeUpdate() > 0;
         }
         catch (SQLException e) {
             Log.error("Database Error when deleting note: " + e.getLocalizedMessage());

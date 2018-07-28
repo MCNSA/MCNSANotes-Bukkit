@@ -1,6 +1,8 @@
 package uk.co.maboughey.mcnsanotes;
 
+import org.bukkit.block.Block;
 import org.bukkit.event.Listener;
+import org.bukkit.material.Crops;
 import org.bukkit.plugin.java.JavaPlugin;
 import uk.co.maboughey.mcnsanotes.commands.*;
 import uk.co.maboughey.mcnsanotes.database.DatabaseManager;
@@ -54,7 +56,7 @@ public class McnsaNotes extends JavaPlugin {
         this.getCommand("flag").setTabCompleter(new NotesTabComplete());
         this.getCommand("deleteflags").setTabCompleter(new NotesTabComplete());
 
-        this.StatsManager = new StatsManager();
+        StatsManager = new StatsManager();
         
         this.listener = new PlayerListener(this);
 
