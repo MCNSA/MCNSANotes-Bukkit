@@ -65,9 +65,12 @@ public class DBuuid {
         }
 
         //How about offline players
-        for (OfflinePlayer oplayer: Bukkit.getOfflinePlayers()) {
-            if (oplayer.getName().toLowerCase().startsWith(name.toLowerCase())) {
-                return oplayer.getUniqueId();
+        OfflinePlayer[] oplayers = Bukkit.getOfflinePlayers();
+        if (oplayers != null) {
+            for (OfflinePlayer oplayer : oplayers) {
+                if (oplayer.getName().toLowerCase().startsWith(name.toLowerCase())) {
+                    return oplayer.getUniqueId();
+                }
             }
         }
 
