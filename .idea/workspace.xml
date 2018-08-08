@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbdfa83e-37b3-48ba-bf75-a050491b91f1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/database/DBuuid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/database/DBuuid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/tabcomplete/NotesTabComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/tabcomplete/NotesTabComplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/co/maboughey/mcnsanotes/database/DBuuid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uk/co/maboughey/mcnsanotes/database/DBuuid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uk/co/maboughey/mcnsanotes/tabcomplete/NotesTabComplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uk/co/maboughey/mcnsanotes/tabcomplete/NotesTabComplete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mcnsanotes-2.0-Bukkit-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/mcnsanotes-2.0-Bukkit-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mcnsanotes-2.0-Bukkit.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/mcnsanotes-2.0-Bukkit.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-mcnsanotes-2.0-Bukkit.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-mcnsanotes-2.0-Bukkit.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotesTabComplete.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NotesTabComplete.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/tabcomplete/NotesTabComplete.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -52,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBuuid.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DBuuid.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/database/DBuuid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="177" column="36" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
+            <state relative-caret-position="462">
+              <caret line="166" column="75" selection-start-line="166" selection-start-column="75" selection-end-line="166" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -120,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/listener/PlayerListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/McnsaNotes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/database/DBuuid.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/tabcomplete/NotesTabComplete.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/database/DBuuid.java" />
       </list>
     </option>
   </component>
@@ -347,9 +353,9 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.14285715" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.16577825" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.16577825" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3583878" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.3583878" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -726,17 +732,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/database/DBuuid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="177" column="36" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/tabcomplete/NotesTabComplete.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/maboughey/mcnsanotes/database/DBuuid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="166" column="75" selection-start-line="166" selection-start-column="75" selection-end-line="166" selection-end-column="75" />
         </state>
       </provider>
     </entry>
