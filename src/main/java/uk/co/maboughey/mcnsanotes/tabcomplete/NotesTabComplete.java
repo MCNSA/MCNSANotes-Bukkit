@@ -6,6 +6,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
+import uk.co.maboughey.mcnsanotes.database.DBuuid;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -23,16 +24,15 @@ public class NotesTabComplete implements TabCompleter {
                     output.add(player.getName());
                 }
             }
-            /*
-            OfflinePlayer[] oplayers = Bukkit.getOfflinePlayers();
-            if (oplayers != null && oplayers.length > 0) {
-                for (OfflinePlayer player: oplayers) {
-                    if (!output.contains(player.getName()) && player.getName().toLowerCase().startsWith(args[0])) {
-                        output.add(player.getName());
+
+            List<String> other = DBuuid.getTabComplete(args[0]);
+            if (other.size() > 0) {
+                for (String oUsername: other) {
+                    if (!output.contains(oUsername)) {
+                        output.add(oUsername);
                     }
                 }
             }
-            */
         }
 
         return output;

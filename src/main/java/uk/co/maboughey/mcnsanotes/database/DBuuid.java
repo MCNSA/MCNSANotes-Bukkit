@@ -2,6 +2,7 @@ package uk.co.maboughey.mcnsanotes.database;
 
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
+import org.bukkit.Server;
 import org.bukkit.entity.Player;
 import uk.co.maboughey.mcnsanotes.utils.Log;
 
@@ -43,14 +44,6 @@ public class DBuuid {
         if (player != null) {
             return player.getName();
         }
-
-        /*
-        //See if player has been on the server before but offline
-        OfflinePlayer oPlayer = Bukkit.getOfflinePlayer(uuid);
-        if (oPlayer != null) {
-            return oPlayer.getName();
-        }
-        */
         //Just return null
         return null;
     }
@@ -65,18 +58,6 @@ public class DBuuid {
             }
         }
 
-        //How about offline players
-        /*
-        OfflinePlayer[] oplayers = Bukkit.getOfflinePlayers();
-
-        if (oplayers != null) {
-            for (OfflinePlayer oplayer : oplayers) {
-                if (oplayer.getName().toLowerCase().startsWith(name.toLowerCase())) {
-                    return oplayer.getUniqueId();
-                }
-            }
-        }
-         */
         //No result found
         return null;
     }
@@ -172,6 +153,31 @@ public class DBuuid {
         catch (SQLException e) {
             Log.error("Error getting known usernames from database: "+e.getLocalizedMessage());
         }
+
+        return output;
+    }
+
+    public static List<String> getTabComplete(String query) {
+        List<String> output = new ArrayList<>();
+        try {
+            //Get the connection
+            Connection connect = DatabaseManager.getConnection();
+
+            //Check if uuid and name relationship is in the database
+            PreparedStatement statement = connect.prepareStatement("SELECT name FROM knownUsernames WHERE name LIKE ? ORDER BY id DESC");
+            statement.setString(1, query+"%");
+            ResultSet results = statement.executeQuery();
+
+            while (results.next()) {
+                if (!output.contains(results.getString("name"))) {
+                    output.add(results.getString("name"));
+                }
+            }
+        }
+        catch (SQLException e) {
+            Log.error("Tab COmplete Error getting known usernames from database: "+e.getLocalizedMessage());
+        }
+
 
         return output;
     }
