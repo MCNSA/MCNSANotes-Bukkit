@@ -23,7 +23,7 @@ public class NotesTabComplete implements TabCompleter {
                     output.add(player.getName());
                 }
             }
-
+            /*
             OfflinePlayer[] oplayers = Bukkit.getOfflinePlayers();
             if (oplayers != null && oplayers.length > 0) {
                 for (OfflinePlayer player: oplayers) {
@@ -32,6 +32,7 @@ public class NotesTabComplete implements TabCompleter {
                     }
                 }
             }
+            */
         }
 
         return output;

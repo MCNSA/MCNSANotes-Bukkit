@@ -44,12 +44,13 @@ public class DBuuid {
             return player.getName();
         }
 
+        /*
         //See if player has been on the server before but offline
         OfflinePlayer oPlayer = Bukkit.getOfflinePlayer(uuid);
         if (oPlayer != null) {
             return oPlayer.getName();
         }
-
+        */
         //Just return null
         return null;
     }
@@ -65,7 +66,9 @@ public class DBuuid {
         }
 
         //How about offline players
+        /*
         OfflinePlayer[] oplayers = Bukkit.getOfflinePlayers();
+
         if (oplayers != null) {
             for (OfflinePlayer oplayer : oplayers) {
                 if (oplayer.getName().toLowerCase().startsWith(name.toLowerCase())) {
@@ -73,7 +76,7 @@ public class DBuuid {
                 }
             }
         }
-
+         */
         //No result found
         return null;
     }
